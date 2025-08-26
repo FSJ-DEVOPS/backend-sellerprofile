@@ -15,7 +15,7 @@ WORKDIR /app
 EXPOSE 8089
 
 # Copy the JAR file from the 'build' stage into the final image
-COPY --from=build /app/target/sellerProfile-0.0.1-SNAPSHOT.jar app.jar
+COPY --from=build /app/target/sellerprofile-0.0.1-SNAPSHOT.jar app.jar
 
 # Set the entrypoint to run the JAR file
 ENTRYPOINT ["java", "-jar", "app.jar"]
