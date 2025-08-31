@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import com.shopverse.sellerprofile.dto.Sellerdto;
 
-@FeignClient(name = "userauth", configuration = FeignConfig.class)
+@FeignClient(name = "userauth", url = "https://userauth-sl4t.onrender.com", configuration = FeignConfig.class)
 public interface SellerFeign {
     @GetMapping("/api/auth/user/{email}")
     Sellerdto getUserByEmail(@PathVariable String email);

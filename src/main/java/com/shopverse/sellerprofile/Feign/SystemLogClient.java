@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import com.shopverse.sellerprofile.dto.SystemLogDTO;
 
-@FeignClient(name = "systemlog")
+@FeignClient(name = "systemlog", url = "https://backend-systemlogs.onrender.com")
 public interface SystemLogClient {
 
     @PostMapping
