@@ -34,7 +34,14 @@ public class Book {
     private String description;
     private Boolean availability;
     private List<String> genre;
+    
+    // Support for multiple images (new field)
+    private List<String> bookImages;
+    
+    // Keep single image field for backward compatibility
+    @Deprecated
     private String bookImage;
+    
     private double bookHeight;
     private double bookWidth;
 }
