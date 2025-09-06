@@ -20,8 +20,9 @@ public class Book {
     private String bookId;
     private String sellerId;
     private String title;
-    private double costPrice;
-    private double sellingPrice;
+    private double costPrice; // Internal use only - not exposed to customers
+    private double sellingPrice; // Current selling price
+    private double mrp; // Maximum Retail Price - shown to customers for discount calculation
     private String isbn;
     private String author;
     private List<String> format;
